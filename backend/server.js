@@ -40,7 +40,7 @@ app.post("/api/login", (req, res) => {
   );
 
   if (user) {
-    res.json({ token: "fake-jwt-token" });
+    res.json({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWUsImlhdCI6MTUxNjIzOTAyMn0.KMUFsIDTnFmyG3nMiGM6H9FNFUROf3wh7SmqJp-QV30" });
   } else {
     res.status(401).json({ message: "Invalid credentials" });
   }
